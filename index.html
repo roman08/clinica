@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nácar · Clínica Dental</title>
+  <meta name="description" content="Nácar, clínica dental (ficticia): limpieza, ortodoncia invisible, implantes y estética dental con trato cercano y precios claros.">
+  <meta name="theme-color" content="#357e83">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script type="module" src="hero3d.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M16 6.5c-2.4 0-3.6-1.5-6.2-1.5C6.4 5 4.5 8 4.5 11.6c0 3.3 1.3 5.4 2 8.6.7 3.4 1.3 7.3 3.5 7.3 2.4 0 2.3-5.8 3.6-7.6.6-.8 1.6-.8 2.4 0 .8.8 1.2 1.9 1.4 3 .5 2.4 1 4.6 2.6 4.6 2.2 0 2.8-3.9 3.5-7.3.7-3.2 2-5.3 2-8.6C27.5 8 25.6 5 22.2 5c-2.6 0-3.8 1.5-6.2 1.5Z" />
+        </svg>
+        <span class="brand__text">Nácar <span class="brand__sub">Clínica Dental</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+        <span class="sr-only">Menú</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#tratamientos">Tratamientos</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn--small" data-scroll>Pedir cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow">Clínica dental en el centro</p>
+        <h1 class="hero__title" id="hero-titulo">Una sonrisa sana empieza por sentirte en buenas manos</h1>
+        <p class="hero__subtitle">Cuidamos tu boca con calma, tecnología actual y un plan claro desde la primera visita. Sin sorpresas y sin prisas.</p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn" data-scroll>Pedir cita</a>
+          <a href="#tratamientos" class="btn btn--outline">Ver tratamientos</a>
+        </div>
+        <ul class="hero__facts" role="list">
+          <li>Primera visita sin coste</li>
+          <li>Horario de tarde</li>
+          <li>Financiación a tu medida</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" data-hero3d aria-hidden="true">
+        <div class="hero__fallback">
+          <img src="img/hero-pareja-800.webp" srcset="img/hero-pareja-800.webp 800w, img/hero-pareja-1600.webp 1600w" sizes="(min-width: 900px) 45vw, 100vw" width="800" height="450" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" tabindex="-1">
+    <section id="nosotros" class="section" aria-labelledby="nosotros-titulo">
+      <div class="container about" data-reveal>
+        <p class="eyebrow">Nosotros</p>
+        <h2 id="nosotros-titulo" class="section__title">Salud dental con nombre y apellidos</h2>
+        <p class="about__lead">En Nácar creemos que ir al dentista no debería dar miedo. Te explicamos cada paso, te damos un presupuesto cerrado antes de empezar y dedicamos a cada paciente el tiempo que necesita. Una consulta luminosa, un equipo pequeño y un trato de tú a tú.</p>
+        <figure class="about__figure">
+          <img src="img/clinica-consulta-800.webp" srcset="img/clinica-consulta-800.webp 800w, img/clinica-consulta-1600.webp 1600w" sizes="(min-width: 1100px) 1040px, 100vw" width="800" height="535" loading="lazy" decoding="async" alt="Consulta dental luminosa con sillón azul verdoso, lámpara, armarios blancos y una ventana con estor">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section values" aria-labelledby="valores-titulo">
+      <div class="container" data-reveal>
+        <p class="eyebrow">Por qué elegirnos</p>
+        <h2 id="valores-titulo" class="section__title">Cuatro compromisos contigo</h2>
+        <ul class="values__grid" role="list">
+          <li class="value">
+            <svg class="value__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <path d="M24 40s-14-8.4-14-18.2C10 16.4 13.9 13 18.2 13c2.6 0 4.6 1.3 5.8 3.2 1.2-1.9 3.2-3.2 5.8-3.2 4.3 0 8.2 3.4 8.2 8.8C38 31.6 24 40 24 40Z" />
+            </svg>
+            <h3 class="value__title">Trato cercano</h3>
+            <p>Te escuchamos antes de proponerte nada y resolvemos tus dudas sin tecnicismos.</p>
+          </li>
+          <li class="value">
+            <svg class="value__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <rect x="10" y="12" width="28" height="20" rx="3" />
+              <path d="M18 38h12M24 32v6M16 22l4 4 8-8" />
+            </svg>
+            <h3 class="value__title">Tecnología actual</h3>
+            <p>Diagnóstico digital, radiografía de baja dosis y escáner intraoral en lugar de moldes.</p>
+          </li>
+          <li class="value">
+            <svg class="value__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="14" />
+              <path d="M24 16v8l5 4" />
+            </svg>
+            <h3 class="value__title">Sin dolor ni prisas</h3>
+            <p>Citas largas, anestesia cuidadosa y pausas cuando las necesites.</p>
+          </li>
+          <li class="value">
+            <svg class="value__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <path d="M26 10h11v11L22 36 11 25 26 10Z" />
+              <circle cx="31.5" cy="15.5" r="2" />
+            </svg>
+            <h3 class="value__title">Precios claros</h3>
+            <p>Presupuesto cerrado por escrito y financiación sin letra pequeña.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="tratamientos" class="section" aria-labelledby="tratamientos-titulo">
+      <div class="container" data-reveal>
+        <p class="eyebrow">Tratamientos</p>
+        <h2 id="tratamientos-titulo" class="section__title">Todo lo que tu sonrisa necesita</h2>
+        <ul class="treatments" role="list">
+          <li class="treatment">
+            <img class="treatment__img" src="img/tratamiento-limpieza-800.webp" width="800" height="600" loading="lazy" decoding="async" alt="Revisión dental con espejo y sonda sobre una sonrisa sana">
+            <div class="treatment__body">
+              <h3 class="treatment__title">Limpieza e higiene</h3>
+              <p>Revisión completa, limpieza profesional y consejos para cuidar tus encías en casa.</p>
+              <a class="btn btn--outline btn--small" href="#contacto">Pide información<span class="sr-only"> sobre limpieza e higiene</span></a>
+            </div>
+          </li>
+          <li class="treatment">
+            <img class="treatment__img" src="img/tratamiento-ortodoncia-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="Persona colocándose un alineador dental transparente">
+            <div class="treatment__body">
+              <h3 class="treatment__title">Ortodoncia invisible</h3>
+              <p>Alineadores transparentes que casi no se notan y que puedes quitarte para comer.</p>
+              <a class="btn btn--outline btn--small" href="#contacto">Pide información<span class="sr-only"> sobre ortodoncia invisible</span></a>
+            </div>
+          </li>
+          <li class="treatment">
+            <img class="treatment__img" src="img/tratamiento-implantes-800.webp" width="800" height="1200" loading="lazy" decoding="async" alt="Mano con guante sosteniendo un implante dental con su corona">
+            <div class="treatment__body">
+              <h3 class="treatment__title">Implantes</h3>
+              <p>Recupera la pieza que te falta con un implante estable y una corona a medida.</p>
+              <a class="btn btn--outline btn--small" href="#contacto">Pide información<span class="sr-only"> sobre implantes</span></a>
+            </div>
+          </li>
+          <li class="treatment">
+            <img class="treatment__img" src="img/tratamiento-estetica-800.webp" width="800" height="533" loading="lazy" decoding="async" alt="Primer plano de una sonrisa con dientes blancos y alineados">
+            <div class="treatment__body">
+              <h3 class="treatment__title">Estética dental</h3>
+              <p>Blanqueamiento y carillas para una sonrisa luminosa y natural.</p>
+              <a class="btn btn--outline btn--small" href="#contacto">Pide información<span class="sr-only"> sobre estética dental</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="equipo" class="section section--teal" aria-labelledby="equipo-titulo">
+      <div class="container team" data-reveal>
+        <img class="team__photo" src="img/equipo-doctor-800.webp" srcset="img/equipo-doctor-800.webp 800w, img/equipo-doctor-1600.webp 1600w" sizes="(min-width: 900px) 40vw, 100vw" width="800" height="1200" loading="lazy" decoding="async" alt="Dentista sonriente con uniforme clínico blanco y las manos juntas">
+        <div class="team__text">
+          <p class="eyebrow">Equipo</p>
+          <h2 id="equipo-titulo" class="section__title">Conoce al Dr. Daniel Ríos</h2>
+          <p>Lleva más de quince años dedicado a la odontología general y la estética dental. Su obsesión es que salgas de la consulta entendiendo qué te pasa, qué opciones tienes y cuánto va a costar.</p>
+          <ul class="checklist" role="list">
+            <li>Licenciado en Odontología</li>
+            <li>Máster en implantología y rehabilitación oral</li>
+            <li>Formación continua en ortodoncia con alineadores</li>
+          </ul>
+          <p class="team__note">Clínica y profesional ficticios, creados para este proyecto de práctica.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section" aria-labelledby="contacto-titulo">
+      <div class="container" data-reveal>
+        <p class="eyebrow">Contacto</p>
+        <h2 id="contacto-titulo" class="section__title">Pide tu primera cita</h2>
+        <p class="section__intro">Llámanos o escríbenos y te buscamos un hueco esta misma semana.</p>
+
+        <div class="contact">
+          <div class="contact__card">
+            <h3 class="contact__heading">Dónde estamos</h3>
+            <address class="contact__address">
+              Calle del Ejemplo, 12<br>
+              28000 Madrid
+            </address>
+            <dl class="contact__data">
+              <div>
+                <dt>Teléfono</dt>
+                <dd><a href="tel:+34900000000">+34 900 000 000</a></dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:hola@nacar.example">hola@nacar.example</a></dd>
+              </div>
+            </dl>
+            <div class="contact__actions">
+              <a class="btn" href="tel:+34900000000">Llamar ahora</a>
+              <a class="btn btn--outline" href="mailto:hola@nacar.example">Escribir un email</a>
+            </div>
+          </div>
+
+          <div class="contact__card">
+            <table class="hours">
+              <caption class="contact__heading">Horario</caption>
+              <tbody>
+                <tr><th scope="row">Lunes a jueves</th><td>10:00 – 20:30</td></tr>
+                <tr><th scope="row">Viernes</th><td>10:00 – 15:00</td></tr>
+                <tr><th scope="row">Sábado y domingo</th><td>Cerrado</td></tr>
+              </tbody>
+            </table>
+            <p class="hours__note">Urgencias de pacientes: te atendemos el mismo día.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="brand" href="#inicio">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M16 6.5c-2.4 0-3.6-1.5-6.2-1.5C6.4 5 4.5 8 4.5 11.6c0 3.3 1.3 5.4 2 8.6.7 3.4 1.3 7.3 3.5 7.3 2.4 0 2.3-5.8 3.6-7.6.6-.8 1.6-.8 2.4 0 .8.8 1.2 1.9 1.4 3 .5 2.4 1 4.6 2.6 4.6 2.2 0 2.8-3.9 3.5-7.3.7-3.2 2-5.3 2-8.6C27.5 8 25.6 5 22.2 5c-2.6 0-3.8 1.5-6.2 1.5Z" />
+          </svg>
+          <span class="brand__text">Nácar <span class="brand__sub">Clínica Dental</span></span>
+        </a>
+        <p class="footer__tagline">Sonrisas sanas, sin miedo y sin prisas.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <ul class="footer__links" role="list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#tratamientos">Tratamientos</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2025 Nácar · Clínica Dental. Clínica ficticia · Proyecto de práctica.</p>
+      <p>Fotos de <a href="img/CREDITS.md">fotógrafos de Unsplash</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
